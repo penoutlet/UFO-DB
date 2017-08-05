@@ -1,0 +1,61 @@
+body{
+    background-image: url("../images/background.JPG");
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+header{
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    margin: 25px;
+    padding: 0;
+}
+.jumbotron{
+    margin: 5px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.row {
+    height: 10px;
+    color: black;
+}
+
+#stats {
+    font-size: 25px;
+    color: black;
+}
+
+input {
+    color: black;
+    font-size: 20px;
+}
+
+.form-group {
+    color: black;
+    font-size: 20px;
+}
+
+.form-group, a {
+    font-size: 20px;
+}
+
+.container {
+    clear: both;
+}
+
+.panel-default{
+    background-color: HighlightText;
+}
+
+.add-sighting{
+    text-align: center;
+    background-color: red;
+    color: darkgray;
+}
+
+
+

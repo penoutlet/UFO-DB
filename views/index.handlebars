@@ -1,0 +1,102 @@
+    <div class="container">
+
+        <header>
+            Welcome to Project Prometheus Citizen...
+        </header>
+
+        <img src="http://img.webme.com/pic/s/southernstar/alien76.gif" alt="Flying Saucer" style="width:200px;height:150px;">
+
+        <div class="jumbotron">
+            <h2>Search Paranormal Activity</h2>
+            <p>You can search our database for UFO activity all around the world.</p>
+
+            <a href="/api/all" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-th-list"></span> All Sightings</a>
+            <a href="/api/add" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-plus"></span> Add New Sighting</a>
+            <a href="/api/city" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-plus"></span> Search by City</a>
+
+            <h1>Search our out-of-this world database</h1>
+
+            <input type="text" class="form-control" id="" placeholder="Search our out-of-this world database">
+            <hr>
+            <p><a class="btn btn-danger btn-lg" href="#" role="button"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Engage</a></p> 
+        </div>
+    </div>
+
+    <div class="container">
+
+            <!--SEARCH BY DATE-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong>Search by Date (MM/DD/YYYY)</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <input type="text" id="date-search" class="form-control">
+                    <br>
+                    <div class="text-right">
+                        <button class="btn btn-primary btn-md" id="date-search-btn"><span class="glyphicon glyphicon-search"></span> Engage</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--SEARCH BY CITY-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong>Search by City</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <input type="text" id="city-search" class="form-control">
+                    <br>
+                    <div class="text-right">
+                        <button class="btn btn-primary btn-md" id="city-search-btn"><span class="glyphicon glyphicon-search"></span> Engage</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--SEARCH BY STATE-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong>Search by State</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <input type="text" id="state-search" class="form-control">
+                    <br>
+                    <div class="text-right">
+                        <button class="btn btn-primary btn-md" id="state-search-btn"><span class="glyphicon glyphicon-search"></span> Engage</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--SEARCH BY SHAPE-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong>Search by Shape</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <input type="text" id="shape-search" class="form-control">
+                    <br>
+                    <div class="text-right">
+                        <button class="btn btn-primary btn-md" id="shape-search-btn"><span class="glyphicon glyphicon-search"></span> Engage</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong>Sighting Search Results</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <div class="well" id="stats" hidden="true">
+                        <h2 id="Sighting"></h2>
+                        <div class="text-primary">
+                            <h3><strong>Date:</strong> <span id="date"></span></h3>
+                            <h3><strong>City:</strong> <span id="city"></span></h3>
+                            <h3><strong>State:</strong> <span id="state"></span></h3>
+                            <h3><strong>Shape:</strong> <span id="shape"></span></h3>
+                            <h3><strong>Duration:</strong> <span id="duration"></span></h3>
+                            <h3><strong>Summary:</strong> <span id="summary"></span></h3>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+    </div>

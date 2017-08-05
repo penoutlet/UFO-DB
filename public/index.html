@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project Prometheus</title>
+
+    <meta charset="UTF-8">
+    <!-- ================Bootstrap=============================================-->
+    <!--mobile responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!--==================Google Fonts==========================================-->
+    <!--link to google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+    <!--====================Our css file=========================================-->
+    <!-- link to my styles.css file-->
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <!--jquery-->
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+        <!-- Moment.js Reference -->
+    <!-- <script src="http://momentjs.com/downloads/moment.js"></script>   -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    
+
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            Welcome to Project Prometheus Citizen...
+        </header>
+
+        <img src="http://img.webme.com/pic/s/southernstar/alien76.gif" alt="Flying Saucer" style="width:200px;height:150px;">
+
+        <div class="jumbotron">
+            <h2>Search Paranormal Activity</h2>
+            <p>You can search our database for UFO activity all around the world.</p>
+
+            <a href="/api/all" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-th-list"></span> All Sightings</a>
+            <a href="#add" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-plus"></span> Add New Sighting</a>
+            <a href="#date" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-search"></span> Search by Date</a>
+            <a href="#city" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-search"></span> Search by City</a>
+            <a href="#state" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-search"></span> Search by State</a>
+            <a href="#shape" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-search"></span> Search by Shape</a>
+        </div>
+    </div>
+
+    <div class="container">
+
+
+            <!--SEARCH BY DATE-->
+        <div class="row">
+            <div class="col-md-4">
+            <div class="panel panel-default" id="date">
+                <div class="panel-heading">
+                <a href="/">Back to Top</a>
+                    <h3 class="panel-title"><strong>Search by Date (MM-DD-YYYY)</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <input type="text" id="date-search" class="form-control" placeholder="Enter Date here (MM-DD-YYYY)">
+                    <br>
+                    <div class="text-right">
+                        <button class="btn btn-primary btn-md" id="date-search-btn"><span class="glyphicon glyphicon-search"></span> Engage</button>
+                        <a href="#results">Go to results</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+            <!--SEARCH BY CITY-->
+        <div class="row">
+            <div class="col-md-4">
+            <div class="panel panel-default" id="city">
+                <div class="panel-heading">
+                <a href="/">Back to Top</a>
+                    <h3 class="panel-title"><strong>Search by City</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <input type="text" id="city-search" class="form-control" placeholder="Enter City here">
+                    <br>
+                    <div class="text-right">
+                        <button class="btn btn-primary btn-md" id="city-search-btn"><span class="glyphicon glyphicon-search"></span> Engage</button>
+                        <a href="#results">Go to results</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+            <!--SEARCH BY STATE-->
+        <div class="row">
+            <div class="col-md-4">
+            <div class="panel panel-default" id="state">
+                <div class="panel-heading">
+                <a href="/">Back to Top</a>
+                    <h3 class="panel-title"><strong>Search by State</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <input type="text" id="state-search" class="form-control" placeholder="Enter State here">
+                    <br>
+                    <div class="text-right">
+                        <button class="btn btn-primary btn-md" id="state-search-btn"><span class="glyphicon glyphicon-search"></span> Engage</button>
+                        <a href="#results">Go to results</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+            <!--SEARCH BY SHAPE-->
+        <div class="row"></div><div class="col-md-4"></div>
+        <div class="row">
+            <div class="col-md-4">
+            <div class="panel panel-default" id="shape">
+                <div class="panel-heading">
+                <a href="/">Back to Top</a>
+                    <h3 class="panel-title"><strong>Search by Shape</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <input type="text" id="shape-search" class="form-control" placeholder="Enter Shape here">
+                    <br>
+                    <div class="text-right">
+                        <button class="btn btn-primary btn-md" id="shape-search-btn"><span class="glyphicon glyphicon-search"></span> Engage</button>
+                        <a href="#results">Go to results</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+            <div class="panel panel-default" id="results">
+                <div class="panel-heading">
+                <a href="/">Back to Top</a>
+                    <h3 class="panel-title"><strong>Sighting Search Results</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <div class="well" id="stats" hidden="true">
+                        <h2 id="Sighting"></h2>
+                        <div class="text-primary">
+                            <h3><strong>Date:</strong> <span id="date"></span></h3>
+                            <h3><strong>City:</strong> <span id="city"></span></h3>
+                            <h3><strong>State:</strong> <span id="state"></span></h3>
+                            <h3><strong>Shape:</strong> <span id="shape"></span></h3>
+                            <h3><strong>Duration:</strong> <span id="duration"></span></h3>
+                            <h3><strong>Summary:</strong> <span id="summary"></span></h3>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-12">
+            <div class="panel panel-default">
+            <div class="panel-heading" id="add">
+                    <a href="/">Back to Top</a>
+                    <h3 class="panel-title"><strong>Add a Sighting</strong></h3>
+            </div>
+             <div class="panel-body">
+                    <form class="create-form" action="/" method="POST">
+             
+                      <div class="form-group">
+                        <label for="date"></label>
+                        <input type="text" id="date" name="date" placeholder="Date (MM-DD-YYYY)">
+                      </div>
+             
+                      <div class="form-group">
+                        <label for="city"></label>
+                        <input type="text" id="city" name="city" placeholder="City">
+                      </div>
+             
+                      <div class="form-group">
+                        <label for="state"></label>
+                        <input type="text" id="state" name="state" placeholder="State">
+                      </div>
+             
+                      <div class="form-group">
+                        <label for="shape"></label>
+                        <input type="text" id="shape" name="shape" placeholder="Shape">
+                      </div>
+             
+                      <div class="form-group">
+                        <label for="duration"></label>
+                        <input type="text" id="duration" name="duration" placeholder="Duration of the sighting">
+                      </div>
+             
+                      <div class="form-group">
+                        <label for="summary"></label>
+                        <textarea id="summary" name="summary" rows="2" cols="40" placeholder="Describe what you witnessed..."></textarea>
+                      </div>
+             
+                      <button class="add-sighting" type="submit">Add Sighting</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+<script src="content/js/jquery.min.js"></script>
+<script src="content/js/bootstrap.min.js"></script>
+
+<!-- Custom Script -->
+    <script src="js/views.js" type="text/javascript"></script>
+</body>
+</html>

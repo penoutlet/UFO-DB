@@ -1,0 +1,20 @@
+<a href="/">Back to Home Page</a>
+
+<div>
+	<div>
+		<h2>All UFO Sightings</h2>
+		<ul>
+			{{#each sightings}}
+				<li>
+						Date: {{this.Date}}<br>
+						City: {{this.City}}<br>
+						State: {{this.State}}<br>
+						Shape: {{this.Shape}}<br>
+						Duration: {{this.Duration}}<br>
+						Summary: {{this.Summary}}<br>
+			    </li>
+				    <hr>			    
+			{{/each}}
+		</ul>
+	</div>
+</div>

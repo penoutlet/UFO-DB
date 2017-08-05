@@ -1,0 +1,32 @@
+{
+  "name": "UFO-Sightings",
+  "version": "1.0.0",
+  "description": "creating an app using Sequelize where a user can search for or add ufo sightings to a database",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pakmania10/UFO-Sightings.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pakmania10/UFO-Sightings/issues"
+  },
+  "homepage": "https://github.com/pakmania10/UFO-Sightings#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "fs": "0.0.1-security",
+    "method-override": "^2.3.8",
+    "mysql": "^2.13.0",
+    "path": "^0.12.7",
+    "sequelize": "^3.30.4",
+    "sequelize-cli": "^2.7.0"
+  }
+}
